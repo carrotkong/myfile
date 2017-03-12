@@ -1,0 +1,50 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: T.Cage
+  Date: 2016/12/19
+  Time: 21:25
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head> <meta charset="utf-8">
+
+
+
+   <title>Title</title>
+    <link href="//cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap-grid.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+<div id="page">
+    <h1>SCHOLAR　</h1>
+    <form id="searchForm" method="post">
+        <fieldset>
+            <input id="s" type="text" />
+            <input type="submit" value="Submit" id="submitButton" />
+            <div id="searchInContainer">
+                <input type="radio" name="check" value="site" id="searchSite" checked />
+                <label for="searchSite" id="siteNameLabel">Publication</label>
+
+                <input type="radio" name="check" value="web" id="searchWeb" />
+                <label for="searchWeb">Scholar</label>
+            </div>
+            <ul class="icons">
+                <li class="web" title="Web Search" data-searchType="web">Web</li>
+                <li class="images" title="Image Search" data-searchType="images">Images</li>
+                <li class="news" title="News Search" data-searchType="news">News</li>
+                <li class="videos" title="Video Search" data-searchType="video">Videos</li>
+            </ul>
+        </fieldset>
+    </form>
+    <div id="resultsDiv"></div>
+</div>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/script.js"></script>
+<div style="text-align:center;clear:both">
+</div>
+</body>
+</html>
